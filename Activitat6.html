@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Exersisi 6</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var N1=prompt('Introdueix el primero numero: ','');
+				var N2=prompt('Introdueix el segon numero: ','');
+				var resultat;
+
+				var mates=prompt('Posa la teva nota de Matamaticas: ','');
+				var fisica=prompt('Posa la teva nota de Fisica: ','');
+				var info=prompt('Posa la teva nota de Informatica: ','');
+
+				var mitja=(mates+fisica+info)/3;
+
+				var edad=prompt('Introdueix la teva edad: ','');
+
+				var num=prompt('Insereix un numero enter: ','');
+
+				if (N1>N2) {
+					resultat=N1+N2;
+					document.write('El resultat es: ' + resultat);
+					document.write('<br>');
+				}
+				else {
+					resultat=N2-N1;
+					document.write('El resultat es: ' + resultat);
+					document.write('<br>');
+				}
+
+				if (mitja >= 5) {
+					document.write('Enorabona has aprobat');
+					document.write('<br>');
+				}
+				else {
+					document.write('Has suspes...');
+					document.write('<br>');
+				}
+
+				if (edad>18 && edad<65) {
+					document.write('Estas en edad laboral!!!');
+					document.write('<br>');
+				}
+				else if (edad < 18){
+					document.write('Ets menor.');
+					document.write('<br>');
+				}
+				else {
+					document.write('Te pots jubilar, te lo has ganado');
+					document.write('<br>');
+				}
+
+				if (num%2 == 0) {
+					document.write('Es un numero par');
+					document.write('<br>');
+				}
+				else {
+					document.write('Es un numero impar');
+					document.write('<br>');
+				}
+			</script>
+		</body>
+	</html>

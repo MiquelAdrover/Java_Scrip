@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Exersisi 7</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var N1=prompt('Introdueix el primer numero: ','');
+				var N2=prompt('Introdueix el segon numero: ','');
+				var N3=prompt('Introdueix el tercer numero: ','');
+				var resultat1;
+				var resultat1;
+				if (N1>N2 && N2>=N3) {
+					resultat1=N1;
+					document.write('El numero mes gran es: ' + resultat1);
+					document.write('<br>');
+				}
+				else if (N2>N1 && N1>=N3) {
+					resultat1=N2;
+					document.write('El numero mes gran es: ' + resultat1);
+					document.write('<br>');
+				}
+				else if (N3>N1 && N1>=N2) {
+					resultat1=N3;
+					document.write('El numero mes gran es: ' + resultat1);
+					document.write('<br>');
+				}
+				
+				if (N1<N2 && N2<=N3) {
+					resultat2=N1;
+					document.write('El numero mes petit es: ' + resultat2);
+					document.write('<br>');
+				}
+				else if (N2<N1 && N1<=N3) {
+					resultat2=N2;
+					document.write('El numero mes petit es: ' + resultat2);
+					document.write('<br>');
+				}
+				else if (N3<N1 && N1<=N2) {
+					resultat2=N3;
+					document.write('El numero mes petit es: ' + resultat2);
+					document.write('<br>');
+				}
+
+				if (N1>0) {
+					document.write('Es positiu!');
+					document.write('<br>');
+				}
+				else if (N1<0) {
+					document.write('Es negatiu');
+					document.write('<br>');
+				}
+				else {
+					document.write('Es 0');
+					document.write('<br>');
+				}
+			</script>
+		</body>
+	</html>
