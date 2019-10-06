@@ -11,8 +11,7 @@
 					B=prompt('Quina base te? ', '');
 					H=prompt('Quina altura te?', '');
 					A = (B*H)/2;
-					document.write('La area del triangle ' + i + ' es ' + A);
-					document.write('<br>');
+					document.write('La area del triangle ' + i + ' es ' + A + '<br>');
 				}
 
 				for ( i = 1 ; i <= 10; i++) {
@@ -22,8 +21,7 @@
 						total=total+num;
 					}
 				}
-				document.write('Hi ha un total de ' + total);
-				document.write('<br>');
+				document.write('Hi ha un total de ' + total + '<br>');
 
 				for ( i = 5; i <= 50; i = i + 5) {
 					document.write(i + ', ');
@@ -35,8 +33,7 @@
 
 				for ( i = 0; i <= 10; i++) {
 					total = num * i;
-					document.write('Multiplicam ' + num + ' * ' + i + ' = ' + total);
-					document.write('<br>');
+					document.write('Multiplicam ' + num + ' * ' + i + ' = ' + total + '<br>');
 				}
 
 				for ( i = 1; i <= 4; i++) {
@@ -49,38 +46,29 @@
 
 					if (costat1 == costat2 && costat2 == costat3) {
 						equi = equi + 1;
-						document.write('El triangle ' + i + ' es Equilatero');
-						document.write('<br>');
+						document.write('El triangle ' + i + ' es Equilatero' + '<br>');
 					}
 					else if (costat1 == costat2 || costat1 == costat3 || costat2 == costat3) {
 						iso = iso + 1;
-						document.write('El triangle ' + i + ' es Isoceles');
-						document.write('<br>');
+						document.write('El triangle ' + i + ' es Isoceles' + '<br>');
 					}
 					else {
 						esc = esc + 1;
-						document.write('El triangle ' + i + ' es Escaleno');
-						document.write('<br>');
+						document.write('El triangle ' + i + ' es Escaleno' + '<br>');
 					}
 				}
-				document.write('Hi ha ' + esc + ' Escaleno');
-				document.write('<br>');
-				document.write('Hi ha ' + iso + ' Isoceles');
-				document.write('<br>');
-				document.write('Hi ha ' + equi + ' Equilatero');
-				document.write('<br>');
+				document.write('Hi ha ' + esc + ' Escaleno' + '<br>');
+				document.write('Hi ha ' + iso + ' Isoceles' + '<br>');
+				document.write('Hi ha ' + equi + ' Equilatero' + '<br>');
 
 				if (equi >= iso && equi > esc) {
-					document.write('Es Equilateros guanyen.');
-					document.write('<br>');
+					document.write('Es Equilateros guanyen.' + '<br>');
 				}
 				else if (iso >= equi && iso > esc) {
-					document.write('Es Isoceles guanyen.');
-					document.write('<br>');
+					document.write('Es Isoceles guanyen.' + '<br>');
 				}
 				else if (esc >= equi && iso < esc) {
-					document.write('Es Equilaters guanyen.');
-					document.write('<br>');
+					document.write('Es Equilaters guanyen.' + '<br>');
 				}
 
 				for ( i = 1; i <= 10; i++) {
@@ -102,14 +90,10 @@
 					}
 				}
 
-				document.write('Positius: ' + pos);
-				document.write('<br>');
-				document.write('Negatius: ' + neg);
-				document.write('<br>');
-				document.write('Impars: ' + imp);
-				document.write('<br>');
-				document.write('Pars: ' + sum);
-				document.write('<br>');
+				document.write('Positius: ' + pos + '<br>');
+				document.write('Negatius: ' + neg + '<br>');
+				document.write('Impars: ' + imp + '<br>');
+				document.write('Pars: ' + sum + '<br>');
 
 				for ( i = 1; i <= 4; i++) {
 					classe=prompt('A quina classe pertany? ', 'A B C');
@@ -132,12 +116,9 @@
 				mitjaA = mitjaA / x;
 				mitjaB = mitjaB / y;
 				mitjaC = mitjaC / z;
-				document.write('La mitja de la classe A es: ' + mitjaA);
-				document.write('<br>');
-				document.write('La mitja de la classe B es: ' + mitjaB);
-				document.write('<br>');
-				document.write('La mitja de la classe C es: ' + mitjaC);
-				document.write('<br>');
+				document.write('La mitja de la classe A es: ' + mitjaA + '<br>');
+				document.write('La mitja de la classe B es: ' + mitjaB + '<br>');
+				document.write('La mitja de la classe C es: ' + mitjaC + '<br>');
 			</script>
 		</body>
 	</html>

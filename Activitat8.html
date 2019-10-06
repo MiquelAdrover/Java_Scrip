@@ -30,64 +30,50 @@
 				var y= parseInt(num2);
 
 				if (dia == 23 && mes == 12) {
-					document.write('Aviu es nadal');
-					document.write('<br>');
+					document.write('Aviu es nadal' + '<br>');
 				}
 				else {
-					document.write('Aviu no es nadal');
-					document.write('<br>');
+					document.write('Aviu no es nadal' + '<br>');
 				}
 
 				if (primer<10 && segon<10 && tercer<10){
-					document.write('Els tres numeros son mes petits que 10');
-					document.write('<br>');
+					document.write('Els tres numeros son mes petits que 10' + '<br>');
 				}
 				else {
-					document.write('No son mes petits que 10');
-					document.write('<br>');
-				}
+					document.write('No son mes petits que 10' + '<br>');
 
 				if (x>0 && y>0) {
-					document.write('Estas en el primer quadrant');
-					document.write('<br>');
+					document.write('Estas en el primer quadrant' + '<br>');
 				}
 				else if (x<0 && y>0) {
-					document.write('Estas en el segon quadrant');
-					document.write('<br>');
+					document.write('Estas en el segon quadrant' + '<br>');
 				}
 				else if (x<0 && y<0) {
-					document.write('Estas en el tercer quadrant');
-					document.write('<br>');
+					document.write('Estas en el tercer quadrant' + '<br>');
 				}
 				else if (x>0 && y<0) {
-					document.write('Estas en el quart quadrant');
-					document.write('<br>');
+					document.write('Estas en el quart quadrant' + '<br>');
 				}
 
 				if (salario<500 && años>=10) {
 					total= (salario / 10) * 2;
 					total= total + salario;
-					document.write(total);
-					document.write('<br>');
+					document.write(total + '<br>');
 				}
 				else if (salario<500 && años<10) {
 					total= (salario / 10)* 5;
 					total= total + salario;
-					document.write(total);
-					document.write('<br>');
+					document.write(total + '<br>');
 				}
 				else if (salario>=500) {
-					document.write(salario);
-					document.write('<br>');
+					document.write(salario + '<br>');
 				}
 
 				if (num1<10 || num2<10 || num3 <10) {
-					document.write('Cualcun es mes petit que 10');
-					document.write('<br>');
+					document.write('Cualcun es mes petit que 10' + '<br>');
 				}
 				else{
-					document.write('Son mes grans que 10');
-					document.write('<br>');
+					document.write('Son mes grans que 10' + '<br>');
 				}
 			</script>
 		</body>
