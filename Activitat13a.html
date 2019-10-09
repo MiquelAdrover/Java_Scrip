@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ex13a</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function menor(){
+					var num1=0, num2=0, num3=0;
+
+					num1=prompt('Introdueix un numero: ', '');
+					num2=prompt('Introdueix el segon numero: ', '');
+					num3=prompt('Introdueix el tercer numero: ', '');
+
+					if (num1==num2 && num2==num3) {
+						document.write('Tots son iguals' + '<br>');
+					}
+					else if (num1==num2) {
+						document.write('El primer i segon numero son iguals' +'<br>');
+					}
+					else if (num1==num3) {
+						document.write('El primer i tercer son iguals' +'<br>');
+					}
+					else if (num2==num3) {
+						document.write('El segon i tercer son iguals' +'<br>');
+					}
+					else if (num1<num2 && num2<num3) {
+						document.write('El mes petir es el Primer ' + '<br>');
+					}
+					else if (num2<num1 && num1<num3) {
+						document.write('El mes petir es el Segon ' + '<br>');
+						
+					}
+					else if (num3<num2 && num2<num1) {
+						document.write('El mes petir es el tercer ' + '<br>');
+					}
+				}
+			</script>
+			<button onclick="menor()">Calcula el menor</button>
+		</body>
+	</html>

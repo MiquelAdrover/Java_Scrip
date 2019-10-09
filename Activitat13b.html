@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Ex13b</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				var llista="";
+
+				function asc(num1, num2, num3){
+					
+					if (num1>num2 && num1>num3) {
+						if (num2>num3) {
+							llista=num1 + ' ' + num2 + ' ' + num3;
+						}
+						else {
+							llista=num1 + ' ' + num3 + ' ' +num2;
+						}
+					}
+					else if (num2>num1 && num2>num3) {
+						if (num1>num3) {
+							llista=num2 + ' ' + num1 + ' ' + num3;
+						}
+						else {
+							llista=num2 + ' ' + num3 + ' ' + num1;
+						}
+					}
+					else {
+						if (num1>num2) {
+							llista=num3 + ' ' + num1 + ' ' + num2;
+						}
+						else {
+							llista=num3 + ' ' + num2 + ' ' + num1;
+						}
+					}
+					return llista;
+				}
+				document.write('Aquest es lordre ascendent: ' + asc(5, 3, 7));
+			</script>
+		</body>
+	</html>
