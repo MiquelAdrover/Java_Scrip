@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				var i=0, paraula='', cont=0;
+					
+                paraula=prompt("Introduexi una paraula:",'');
+
+                for (i = paraula.length - 1; i > -1; i--) {
+                	if (paraula[i] == 'a' || paraula[i] == 'e' || paraula[i] == 'i' || paraula[i] == 'o' || paraula[i] == 'u') {
+                		cont++;
+                	}
+                }
+                document.write("Mitat " + paraula.substring(0,paraula.length/2) + "<br>");
+                document.write("Vocals " + cont + "<br>");
+                document.write("Darrer caracter " + paraula.charAt(paraula.length - 1) + "<br>");
+                document.write("Al reves " + paraula.split("").reverse("").join("") + "<br>");
+                document.write("Seperat " + paraula.split("").join(" ") + "<br>");
+                
+			</script>
+		</body>
+	</html>

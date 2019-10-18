@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function calcular() {
+
+					var deportes='';
+					
+					if (document.getElementById('Futbol').checked == true) {
+						deportes=deportes + "Futbol ";
+					}
+					if (document.getElementById('Karate').checked == true) {
+						deportes=deportes + "Karate ";
+					}
+					if (document.getElementById('Tenis').checked == true) {
+						deportes=deportes + "Tenis ";
+					}
+
+					alert(deportes);
+				}
+				
+			</script>
+			<form>
+				<input type="checkbox" id="Futbol">Futbol
+				</br>
+				<input type="checkbox" id="Karate">Karate
+				</br>
+				<input type="checkbox" id="Tenis">Tenis
+				</br>
+				<button type="button" onclick="calcular()">Calcula</button>
+			</form>
+		</body>
+	</html>

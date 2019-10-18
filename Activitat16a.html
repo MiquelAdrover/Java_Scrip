@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+					
+					num = new Array(7);
+
+					var total1=0, total2=0, total3=0, cont=0, i=0, x=0;
+
+					function carrega(num) {
+						for (i = 0; i < num.length; i++) {
+							x = prompt('Quin numero vols? ', '');
+							num[i]=parseInt(x);
+						}
+					}
+
+					function suma(num) {
+						for (i = 0; i < num.length; i++) {
+							total1=total1+num[i];
+						}
+						return total1;
+					}
+
+					function mitja(num) {
+						return suma(num)/num.length;
+					}
+
+					function suma5(num) {
+						for (i = 0; i < num.length; i++) {
+							if (num[i] > 5) {
+								total3=total3+num[i];
+								cont++;
+							}
+						}
+						return total3;
+					}
+					
+					carrega(num);
+					document.write(suma5(num) + '<br>');
+					document.write(suma(num) + '<br>');
+					document.write(mitja(num) + '<br>');
+					document.write(cont + '<br>');
+			</script>
+		</body>
+	</html>

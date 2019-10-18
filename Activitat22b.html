@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function calcular() {
+					var b=document.getElementById("menu2");
+					var c=document.getElementById("menu3");
+					var a=document.getElementById("menu1");
+					a=parseInt(a.options[a.selectedIndex].value);
+					b=parseInt(b.options[b.selectedIndex].value);
+					c=parseInt(c.options[c.selectedIndex].value);
+					var total= a + b + c;
+					document.getElementById('text').value=total;
+				}
+				
+			</script>
+			<form>
+				<select id="menu1">
+					<option value="400">Intel I3</option>
+					<option value="600">Intel I5</option>
+					<option value="800">Intel I7</option>
+				</select>
+
+				<select id="menu2">
+					<option value="250">Samsung 20</option>
+					<option value="350">Samsung 22</option>
+					<option value="500">Samsung 26</option>
+				</select>
+
+				<select id="menu3">
+					<option value="300">500 GB</option>
+					<option value="440">1 Tb</option>
+					<option value="500">3 Tb</option>
+				</select>
+				</br>
+				<input type="text" id="text">
+				<button type="button" onclick="calcular()">Calcular</button>
+			</form>
+		</body>
+	</html>

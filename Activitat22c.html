@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function pizza() {
+					var a=document.getElementById("menu");
+					a=parseInt(a.options[a.selectedIndex].value);
+					var num=document.getElementById("numero");
+					num=parseInt(num.value);
+					var total= a * num;
+					document.getElementById('text').value=total;
+				}
+				
+			</script>
+			<form>
+				<select id="menu">
+					<option value="6">Peperoni</option>
+					<option value="5">Formaggi</option>
+					<option value="4">Procciuto</option>
+				</select>
+				</br>
+				<p>Numero de pizzas:</p>
+				<input type="text" id="numero">
+				</br>
+				<p>Total a pagar:</p>
+				<input type="text" id="text">
+				<button type="button" onclick="pizza()">Calcular</button>
+			</form>
+		</body>
+	</html>

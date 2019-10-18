@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function permis() {
+					
+					if (document.getElementById('mayor').checked == true) {
+						alert("Pots pasar.");
+					}
+					if (document.getElementById('menor').checked == true) {
+						alert("No tens la edad adecuada.");
+					}
+				}
+				
+			</script>
+			<form>
+				<input type="radio" id="mayor">Mayor de edad
+				</br>
+				<input type="radio" id="menor">Menor de 18
+				</br>
+				<button type="button" onclick="permis()">Calcula</button>
+			</form>
+		</body>
+	</html>

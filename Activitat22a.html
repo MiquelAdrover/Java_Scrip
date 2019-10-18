@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function numero() {
+					var sel=document.getElementById("menu");
+					document.getElementById('text').value=sel.options[sel.selectedIndex].value;
+				}
+				
+			</script>
+			<form>
+				<select id="menu" onchange="numero()">
+					<option value="6">Peperoni</option>
+					<option value="5">Formaggi</option>
+					<option value="4">Procciuto</option>
+				</select>
+				<input type="text" id="text"></br>
+			</form>
+			
+		</body>
+	</html>

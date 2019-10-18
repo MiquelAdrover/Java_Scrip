@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+					
+					var x='', i=0, cont=0;
+
+					nom = new Array();
+
+					function carrega(nom) {
+						while (x!='fin') {
+							x = prompt('Quin nom vols ?', '');
+							if (x=='fin') {
+								break;
+							}
+							else {
+								cont++;
+							}
+						}
+						return cont;
+					}
+
+					document.write(carrega(nom));
+
+			</script>
+		</body>
+	</html>

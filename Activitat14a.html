@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function adicio(value1, value2){
+					
+					this.value1=parseInt(value1);
+					this.value2=parseInt(value2);
+					this.loadValue1=loadValue1;
+					this.loadValue2=loadValue2;
+					this.result=result;
+
+					function loadValue1(value1) {
+						this.value1=value1;
+					}
+
+					function loadValue2(value2) {
+						this.value2=value2;
+					}
+
+					function result() {
+						return value1 + value2;
+					}
+				}
+
+				s1= new adicio(30, 40);
+				document.write(s1.result());
+			</script>
+		</body>
+	</html>

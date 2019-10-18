@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function numero() {
+					var num=document.getElementById('pas1').value;
+					var num2=document.getElementById('pas2').value;
+
+					if (num2==num) {
+						alert("La contrsenya es correcta.");
+					}
+					else {
+						alert("No coincideix");
+					}
+				}
+				
+			</script>
+			<form>
+				<input type="password" id="pas2"><br/>
+				<input type="password" id="pas1"><br/>
+				<button type="button" value="check" onclick="numero()">Enviar</button>
+			</form>
+			
+		</body>
+	</html>

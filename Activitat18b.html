@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+					
+					var text='', paraula='', pos='';
+
+					text=prompt("Introdueix un texte: ", '');
+					paraula=prompt("Quina paraula vols sercar? ", '');
+
+					pos=text.indexOf(paraula);
+
+					if (pos == -1) {
+						document.write("No sa trobat sa paraula.");
+					}
+					else {
+						document.write("Sa trobat sa paraula: " + paraula);
+					}
+
+			</script>
+		</body>
+	</html>

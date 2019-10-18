@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				var i=0, correu='';
+					
+                correu=prompt("Introdueix un correu",'');
+
+                function isCorreu(correu) {
+                    for (i = 0; i < correu.length; i++) {
+                        if (correu.charAt(i) == '@') {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+
+                if (isCorreu(correu)) {
+                    document.write("Es un correu valid.");
+                }
+                else {
+                    document.write("No es un correu.");
+                }
+			</script>
+		</body>
+	</html>

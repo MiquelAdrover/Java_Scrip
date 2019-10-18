@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function calcular() {
+					var cont=0;
+					var a=document.getElementById("pre1");
+					a=a.options[a.selectedIndex].value;
+					if (a == "t") {
+						cont++;
+					}
+					var b=document.getElementById("pre2");
+					b=b.options[b.selectedIndex].value;
+					if (b == "t") {
+						cont++;
+					}
+					var c=document.getElementById("pre3");
+					c=c.options[c.selectedIndex].value;
+					if (c == "t") {
+						cont++;
+					}
+					var d=document.getElementById("pre4");
+					d=d.options[d.selectedIndex].value;
+					if (d == "t") {
+						cont++;
+					}
+
+					return alert(cont);
+				}
+				
+			</script>
+			<form>
+				<p>Hola?</p>
+				<select id="pre1">
+					<option value="f">No</option>
+					<option value="f">si</option>
+					<option value="t">Hola</option>
+					<option value="f">tio</option>
+				</select>
+				</br>
+				<p>Tardes?</p>
+				<select id="pre2">
+					<option value="f">original</option>
+					<option value="f">muerete</option>
+					<option value="f">no lo se</option>
+					<option value="t">Tardes</option>
+				</select>
+				</br>
+				<p>Pollito</p>
+				<select id="pre3">
+					<option value="t">Pollito</option>
+					<option value="f">gallina</option>
+					<option value="f">gallo</option>
+					<option value="f">abeja</option>
+				</select>
+				</br>
+				<p>Santi es dios?</p>
+				<select id="pre4">
+					<option value="t">Jesucristo echo java</option>
+					<option value="f">Es viejo</option>
+					<option value="f">Tiene un rabo de toro</option>
+					<option value="f">Invento el papiro</option>
+				</select>
+				</br>
+				<button type="button" onclick="calcular()">Entregar</button>
+			</form>
+		</body>
+	</html>

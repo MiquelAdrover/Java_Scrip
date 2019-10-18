@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function numero() {
+					var num=parseInt(document.getElementById('texte').value);
+					var num2=parseInt(document.getElementById('texte2').value);
+					alert("Aquest es el numero: " + Math.max(num, num2));
+				}
+				
+			</script>
+			<form>
+				<input type="text" id="texte"><br/>
+				<input type="text" id="texte2"><br/>
+				<button type="button" value="check" onclick="numero()">Enviar</button>
+			</form>
+			
+		</body>
+	</html>

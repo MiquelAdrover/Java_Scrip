@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				d = new Date();
+				var mes=prompt('Quin mes es?', '');
+				d.setMonth(mes);
+
+					if (d.getMonth() <= 2) {
+						document.write('Lany es: ' + d.getFullYear() + ' i els mesos son: enero, febrero, marzo.');
+					}
+					else if (d.getMonth() >= 3 && d.getMonth() <= 4) {
+						document.write('Lany es: '+ d.getFullYear() + ' i els mesos son: abril, mayo, junio.');
+					}
+					else if (d.getMonth() >= 5 && d.getMonth() <= 8) {
+						document.write('Lany es: ' + d.getFullYear() + ' i els mesos son: julio, agosto, septiembre.');
+					}
+					else {
+						document.write('Lany es: ' + d.getFullYear() + ' i els mesos son: octubre, noviembre, diciembre.');
+					}
+				
+			</script>
+		</body>
+	</html>
