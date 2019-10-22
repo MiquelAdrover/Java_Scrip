@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				function enviar() {
+
+					var pass=document.getElementById("pass");
+					pass=pass.value;
+
+					var format=/^\w{6,19}$/;
+					
+					if (format.test(pass)) {
+						alert("Correcta has entrat");
+					}
+					else {
+						alert("Format inadecuat torna a intentaro");
+					}
+				}
+
+			</script>
+			<form>
+				<input type="text" id="usuari">
+				</br>
+				<input type="password" id="pass">
+				</br>
+				<button type="button" onclick="enviar()">Enviar</button>
+			</form>
+		</body>
+	</html>

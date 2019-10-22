@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+
+				var a = Math.round(Math.random() * 2);
+
+				function enlace() {
+					if (a == 0) {
+						window.location='https://www.google.com/';
+					}
+					else if (a == 1) {
+						window.location='https://es.yahoo.com';
+					}
+					else if (a == 2) {
+						window.location='https://www.bing.com ';
+					}
+				}
+			</script>
+			<form>
+				<a href="javascript:enlace()">Enllaç a una pagina</a>
+			</form>
+		</body>
+	</html>

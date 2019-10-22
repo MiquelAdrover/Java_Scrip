@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Prova</title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				function paint(thing,col){
+					thing.bgColor=col;
+				}
+			</script>
+			<form>
+				<table border="1">
+					<tr onMouseOver="paint(this,'#ff0000')" onMouseOut="paint(this,'#ffffff')">
+						<td>Red</td>
+						<td>Red</td>
+					</tr>
+					<tr onMouseOver="paint(this,'#00ff00')" onMouseOut="paint(this,'#ffffff')">
+						<td>Green</td>
+						<td>Green</td>
+					</tr>
+					<tr onMouseOver="paint(this,'#0000ff')" onMouseOut="paint(this,'#ffffff')">
+						<td>Blue</td>
+						<td>Blue</td>
+					<tr>
+				</table>
+			</form>
+		</body>
+	</html>
